@@ -107,8 +107,23 @@ int main() {
 		cout << "\nUppercase: " << char(toupper(cLetter));
 	}
 
+	// 7
+	float nPrice;
+	int nDisksNumber;
 
+	cout << "\nEnter price of a disk: ";
+	cin >> nPrice;
+	cout << "\nEnter numer of disks: ";
+	cin >> nDisksNumber;
 
+	if (!nPrice || !nDisksNumber)
+	{
+		cin.clear();
+		cout << -1;
+	}
+	else {
+		cout << "\nPay " << floor(nPrice * nDisksNumber) << " NIS";
+	}
 
 
 
