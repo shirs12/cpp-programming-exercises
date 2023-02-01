@@ -93,6 +93,22 @@ int main() {
 		cout << "\nArea: " << PI * nRadius * nRadius;
 	}
 
+	// 6
+	char cLetter;
+	cout << "\nEnter a lower-case letter: ";
+	cin >> cLetter;
+
+	if (int(cLetter) < 97 || int(cLetter) > 122)
+	{
+		cin.clear();
+		cout << -1;
+	}
+	else {
+		cout << "\nUppercase: " << char(toupper(cLetter));
+	}
+
+
+
 
 
 
