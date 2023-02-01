@@ -3,7 +3,6 @@ using namespace std;
 #include<math.h>
 
 int main() {
-	
 	// 1
 	cout << "Hello World!\n" << endl;
 
@@ -130,8 +129,76 @@ int main() {
 		cout << "\nPay " << ((result / 5) * 5) << " NIS";
 	}
 
+	
 
+	// 9
+	int nFirstN;
+	int nSecondN;
+	int nThirdN;
 
+	bool bIsIncremental;
+
+	cout << "\nEnter three numbers: " << endl;
+	cin >> nFirstN;
+	cin >> nSecondN;
+	cin >> nThirdN;
+
+	bIsIncremental = (nFirstN < nSecondN) && (nSecondN < nThirdN);
+
+	cout << "Is incremental: " << bIsIncremental;
+	
+
+	// 10
+	int nCenterX;
+	int nCenterY;
+	int nRadiusNum;
+
+	int nX;
+	int nY;
+
+	bool bOnCircle;
+
+	cout << "\nEnter center point (x,y): " << endl;
+	cin >> nCenterX;
+	cin >> nCenterY;
+
+	cout << "\nEnter radius: " << endl;
+	cin >> nRadiusNum;
+
+	cout << "\nEnter another point (x,y): " << endl;
+	cin >> nX;
+	cin >> nY;
+
+	bOnCircle = (sqrt(nCenterX - nX) + sqrt(nCenterY - nY)) < sqrt(nRadiusNum);
+
+	cout << "\nIs on circle: " << bOnCircle << endl;
+	
+
+	// 11
+	char cChar;
+	bool bIsLetter;
+
+	cout << "\nEnter a character: " << endl;
+	cin >> cChar;
+
+	bIsLetter = (int(cChar) > 64 && int(cChar) < 91) || (int(cChar) > 96 && int(cChar) < 123);
+
+	cout << "Is English: " << bIsLetter << endl;
+	
+	// 12
+	int nFNumber;
+	int nSNumber;
+
+	bool bIsDiv;
+
+	cout << "\nEnter two numbers: " << endl;
+	cin >> nFNumber;
+	cin >> nSNumber;
+
+	bIsDiv = (nFNumber % nSNumber) == 0 || (nSNumber % nFNumber) == 0;
+
+	cout << "Divisable: " << bIsDiv << endl;
+	
 
 
 }
