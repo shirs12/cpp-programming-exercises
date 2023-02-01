@@ -77,6 +77,21 @@ int main() {
 	}
 
 	// 5
+	int nRadius;
+	const float PI = 3.14159265359;
+
+	cout << "\nEnter radius: ";
+	cin >> nRadius;
+
+	if (!cin)
+	{
+		cin.clear();
+		cout << -1;
+	}
+	else {
+		cout << "\nPerimeter: " << 2 * PI * nRadius;
+		cout << "\nArea: " << PI * nRadius * nRadius;
+	}
 
 
 
