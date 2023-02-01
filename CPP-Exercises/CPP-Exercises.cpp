@@ -3,6 +3,7 @@ using namespace std;
 #include<math.h>
 
 int main() {
+	/*
 	// 1
 	cout << "Hello World!\n" << endl;
 
@@ -106,14 +107,14 @@ int main() {
 	else {
 		cout << "\nUppercase: " << char(toupper(cLetter));
 	}
-
+	*/
 	// 7
 	float nPrice;
 	int nDisksNumber;
 
 	cout << "\nEnter price of a disk: ";
 	cin >> nPrice;
-	cout << "\nEnter numer of disks: ";
+	cout << "\nEnter number of disks: ";
 	cin >> nDisksNumber;
 
 	if (!nPrice || !nDisksNumber)
@@ -122,8 +123,14 @@ int main() {
 		cout << -1;
 	}
 	else {
-		cout << "\nPay " << floor(nPrice * nDisksNumber) << " NIS";
+		int result = floor(nPrice * nDisksNumber);
+		cout << "\nPay " << result << " NIS";
+
+	// 8
+		cout << "\nPay " << ((result / 5) * 5) << " NIS";
 	}
+
+
 
 
 
