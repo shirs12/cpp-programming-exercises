@@ -3,7 +3,7 @@ using namespace std;
 #include<math.h>
 
 int main() {
-	/*
+	
 	// 1
 	cout << "Hello World!\n" << endl;
 
@@ -107,7 +107,7 @@ int main() {
 	else {
 		cout << "\nUppercase: " << char(toupper(cLetter));
 	}
-	*/
+	
 	// 7
 	float nPrice;
 	int nDisksNumber;
