@@ -200,5 +200,4 @@ int main() {
 	cout << "Divisable: " << bIsDiv << endl;
 	
 
-
 }
