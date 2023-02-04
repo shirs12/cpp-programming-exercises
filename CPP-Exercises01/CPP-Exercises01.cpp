@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {
-    /*
     // 13
     int nGrade;
 
@@ -55,9 +54,8 @@ int main()
     }
     else
     {
-        cout << "Gradenust be grater than 0" << endl;
+        cout << "Grade must be grater than 0" << endl;
     }
-    */
 
     // 15
     int nShape;
@@ -118,6 +116,77 @@ int main()
     }
 
     // 16
+    char cCharacter;
+
+    int nFirstGrade;
+    int nSecondGrade;
+    int nThirdGrade;
+
+    cout << "Enter\n'E' for English\n'G' for Geography\n'M' for Math" << endl;
+    cin >> cCharacter;
+
+    if (int(cCharacter) != 69 && int(cCharacter) != 71 && int(cCharacter) != 77)
+    {
+        cout << "You must enter only one of the letters obove" << endl;
+    }
+    else {
+        switch (int(cCharacter))
+        {
+        case(69):
+            cout << "Enter grades: " << endl;
+            cin >> nFirstGrade;
+            cin >> nSecondGrade;
+
+            if (nFirstGrade < 57 || nSecondGrade < 57)
+            {
+                cout << "You haven't passed" << endl;
+            }
+            else
+            {
+                cout << "You've passed" << endl;
+            }
+            break;
+
+        case(71):
+            cout << "Enter grades: " << endl;
+            cin >> nFirstGrade;
+            cin >> nSecondGrade;
+            cin >> nThirdGrade;
+
+            if (((nFirstGrade > 56 && nSecondGrade > 56) ||
+                (nFirstGrade > 56 && nThirdGrade > 56) ||
+                (nSecondGrade > 56 && nThirdGrade > 56)) &&
+                (((nFirstGrade + nSecondGrade + nThirdGrade) / 3) > 60))
+            {
+                cout << "You've passed" << endl;
+            }
+            else
+            {
+                cout << "You haven't passed" << endl;
+            }
+            break;
+
+        case(77):
+            cout << "Enter grades: " << endl;
+            cin >> nFirstGrade;
+            cin >> nSecondGrade;
+
+            if ((nFirstGrade > 56 && nSecondGrade > 56) && 
+                (nFirstGrade > 70 || nSecondGrade > 70))
+            {
+                cout << "You've passed" << endl;
+            }
+            else
+            {
+                cout << "You haven't passed" << endl;
+            }
+            break;
+
+
+        default:
+            break;
+        }
+    }
 
 
 
