@@ -188,8 +188,23 @@ int main()
         }
     }
 
+    // 17
+    int nNumber;
+    cout << "Enter number: " << endl;
+    cin >> nNumber;
 
-
+    if (nNumber == 10)
+    {
+        cout << "10" << endl;
+    }
+    else if (nNumber > 10)
+    {
+        cout << "Greater than 10" << endl;
+    }
+    else 
+    {
+        cout << "Less than 10" << endl;
+    }
 
 
 
