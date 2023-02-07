@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+
 	int nChoice = 0;
 	int nFirstStackChoise = 0;
 	int nSecondStackChoise = 0;
@@ -55,6 +56,13 @@ int main() {
 				"\n3. C"
 				"\nEnter your choice: ";
 			cin >> nFirstStackChoise;
+
+			while (nFirstStackChoise < 0 || nFirstStackChoise > 3)
+			{
+				cout << "There is no such stack, please enter 1, 2, or 3";
+				cin >> nFirstStackChoise;
+			}
+
 			switch (nFirstStackChoise)
 			{
 			case(1):
@@ -77,6 +85,12 @@ int main() {
 				"\n3. C"
 				"\nEnter your choice: ";
 			cin >> nSecondStackChoise;
+
+			while (nSecondStackChoise < 0 || nSecondStackChoise > 3)
+			{
+				cout << "There is no such stack, please enter 1, 2, or 3";
+				cin >> nFirstStackChoise;
+			}
 
 			while (nSecondStackChoise == nFirstStackChoise)
 			{

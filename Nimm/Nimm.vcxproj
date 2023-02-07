@@ -24,6 +24,7 @@
     <ProjectGuid>{a796e6f5-9aa4-4deb-9527-c0f8249b28f2}</ProjectGuid>
     <RootNamespace>Nimm</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>NimmGame</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
