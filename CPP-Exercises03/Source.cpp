@@ -210,8 +210,10 @@ void calcDigits() {
 	int nNumber;
 	int nSum = 0;
 
+#pragma region User input
 	cout << "Enter a number greater than 100: ";
 	cin >> nNumber;
+#pragma endregion
 
 	if (nNumber < 100)
 	{
@@ -255,17 +257,6 @@ void avgNumbers() {
 
 	cout << "Average: " << (double)(nSum / (nCountPositive + nCountNegative));
 }
-
-//int reverseNum(int nNumber) {
-//	string result;
-//
-//	while (nNumber != 0)
-//	{
-//		
-//	}
-//
-//	return result;
-//}
 
 void methodsMenu() {
 	int nChoice = 0;
@@ -336,7 +327,7 @@ int main() {
 	//indexValueFibonacci();
 
 	// 27
-	// cout << isPrime() << endl;
+	//cout << isPrime() << endl;
 
 	// 28
 	//cout << numPrime() << endl;
@@ -361,5 +352,6 @@ int main() {
 
 	// 35
 	methodsMenu();
+
 }
 
